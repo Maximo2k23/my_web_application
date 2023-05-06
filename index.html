@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de proyecto final</title>
+    <link rel="icon" type="imagen/x-icon" href="imagenes/favicon.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <!--bg-body-tertiary -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top" id="mainNav">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Proyecto Final</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#secPortafolio">Portafolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#secAcerca">Acerca de</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Slider -->
+      <div class="marco bg-warning">
+            <div class="container">
+                <img class="tamImagen" src="imagenes/avataaars.svg">
+                <h1 class="titulo">Proyecto Final</h1>
+                <p>Este es un ejemplo de proyecto final</p>
+
+            </div>
+
+      </div>
+
+      <!-- Portafolio -->
+    <section id="secPortafolio">
+    <div class="container text-center">
+        <h2 class="subtitulo active">PORTAFOLIO</h2>
+        <div class="row mt-5">
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio" data-bs-toggle="modal" data-bs-target="#portafolio1">
+                    <div>
+                        <img class="img-fluid" src="imagenes/cabin.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio" data-bs-toggle="modal" data-bs-target="#portafolio2">
+                    <div>
+                        <img class="img-fluid" src="imagenes/cake.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio">
+                    <div>
+                        <img class="img-fluid" src="imagenes/circus.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio">
+                    <div>
+                        <img class="img-fluid" src="imagenes/game.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio">
+                    <div>
+                        <img class="img-fluid" src="imagenes/safe.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portafolio">
+                    <div>
+                        <img class="img-fluid" src="imagenes/submarine.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Acerca de -->
+    <section class="acerca" id="secAcerca">
+        <div class="container pb-5">
+            <h2 class="subtitulo text-center mb-4">ACERCA DE </h2>
+            <div class="row mt-5">
+                <div class="col-md-6 px-5">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, enim voluptates reprehenderit minus rem repudiandae provident repellendus modi, repellat quam eaque doloremque. Deleniti totam praesentium asperiores cupiditate. Quidem, totam adipisci?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, molestiae hic saepe sequi laborum deserunt nam perspiciatis facere, quae, nulla sit culpa accusamus rerum dolores consequatur inventore voluptatum quas excepturi?
+                    </p>
+                </div>
+                <div class="col-md-6 px-5">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum, enim voluptates reprehenderit minus rem repudiandae provident repellendus modi, repellat quam eaque doloremque. Deleniti totam praesentium asperiores cupiditate. Quidem, totam adipisci?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, molestiae hic saepe sequi laborum deserunt nam perspiciatis facere, quae, nulla sit culpa accusamus rerum dolores consequatur inventore voluptatum quas excepturi?
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+    <div class="container pb-5">
+        <h2 class="subtitulo text-center">CONTACTO</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="text" data-sb-validations="required" id="nombre">
+                        <label>Nombres y Apellidos</label>
+                        <div class="invalid-feeback" data-sb-feedback="nombre:required">*Nombre es obligatorio</div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="email" data-sb-validations="required" id="correo">
+                        <label>Correo</label>
+                        <div class="invalid-feeback" data-sb-feedback="nombre:required">*El correo es obligatorio</div>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input class="form-control" type="tel" data-sb-validations="required" id="celular">
+                        <label>Telefono</label>
+                        <div class="invalid-feeback" data-sb-feedback="nombre:required">*Celular es obligatorio</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" type="text" data-sb-validations="required" id="mensaje" style="height: 130px;">
+                        </textarea>
+                        <label>Mensaje</label>
+                        <div class="invalid-feeback" data-sb-feedback="nombre:required">*Mensaje es obligatorio</div>
+                    </div>
+
+                    <button type="button" class="btn btn-warning">*Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center pie">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4">
+                    <h4 class="titulofooter">DIRECCION</h4>
+                    <p>
+                        Av. Javier Prado 1234<br>
+                        Lima - Perú
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="titulofooter">REDES SOCIALES</h4>
+                    <a class=" btn btn-outline-light botonRedes " href="#">
+                        <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                    </a>
+                    <a class=" btn btn-outline-light botonRedes " href="#">
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </a>
+                    <a class=" btn btn-outline-light botonRedes " href="#">
+                        <i class="fa-brands fa-instagram fa-fade fa-2xl"></i>
+                    </a>
+                    <a class=" btn btn-outline-light botonRedes " href="http://wa.link/7rge6z" target="_blank">
+                        <i class="fa-brands fa-whatsapp fa-2xl"></i>
+                    </a>
+                    
+                    
+                    
+                </div>
+                <div class="col-md-4">
+                    <h4 class="titulofooter">SOBRE EL PROYECTO</h4>
+                    <p>
+                        Este proyecto es un desarrollo<br>
+                        academico del curso de Diseño Web
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Modal imagen 1-->
+    <div class="modal fade" id="portafolio1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <!--<h1 class="modal-title fs-5" id="staticBackdropLabel">!!Importante</h1>-->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <img class="img-fluid" src="imagenes/cabin.png"/>
+                        </div>
+                    </div>
+                </div>
+            <!--Hola terricola, vine a invadir su tierra-->
+            </div>
+            <!--<div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Understood</button>
+            </div>-->
+        </div>
+        </div>
+    </div>
+        <!-- Modal imagen 2-->
+        <div class="modal fade" id="portafolio2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                <!--<h1 class="modal-title fs-5" id="staticBackdropLabel">!!Importante</h1>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <img class="img-fluid" src="imagenes/cake.png"/>
+                            </div>
+                        </div>
+                    </div>
+                <!--Hola terricola, vine a invadir su tierra-->
+                </div>
+                <!--<div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Understood</button>
+                </div>-->
+            </div>
+            </div>
+        </div>
+
+    <script type="text/javascript" src="js/animacion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
